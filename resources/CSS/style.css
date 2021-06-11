@@ -1,0 +1,392 @@
+/* DOCUMENT INFORMATION
+    -Document: Les paniers de l'Isac
+    -Version : 1.0.0
+    -Author : Erwan
+ */
+ 
+ /* COLORS
+    -Defaut body text   #eee
+    -H1                 #fff
+    -H2                  rgb(128, 120, 120)
+    -H3
+
+    - button
+    - button:hover
+
+    - icon darkgreen;
+
+    -border
+*/
+
+/* FONTS
+    - Defaut = Sen
+    - Subtitle
+*/
+
+/* CSS DIRECTORY
+    1. =GLOBAL
+    2. =HEADER
+    3. =PRODUITS
+*/
+
+/* GLOBAL
+============================*/
+
+html {
+    background-color: #fff;
+}
+
+h1, h2, h3, h4 {font-family : 'Marck Script', cursif ;
+}
+
+h1 {
+    color: #fff;
+}
+
+h2 {
+    color: rgb(128, 120, 120);
+    font-size: 250%;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+
+}
+
+h2::after{
+    display: block;
+    height: 2px;
+    background-color: darkgreen;
+    width: 100px;
+    content: "" ;
+    margin: auto;
+    margin-top: 10px;
+}
+
+h3{
+    font-size: 160%;
+}
+
+p{ font-size: 12px;
+    font-weight: 300;
+    line-height: 24px;
+     font-family: 'Sen', sans-serif;
+     text-align: justify;
+
+}
+
+section {
+    padding: 30px 0 60px 0;
+}
+
+
+/* HEADER
+============================*/
+
+header{
+    background-image:linear-gradient(to bottom right, rgba(25, 8, 177, 0.4),
+
+                                                         rgba(250,250,250,1)
+     ), 
+                                    url(../images/Pommier.jpg);
+    height: 70vh;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.home_title { position: absolute; max-width: 600px; top: 30%;}
+
+.home_title h1 { font-size: 550%;
+}
+
+.home_title h1 span {font-weight: 750;}
+
+.home_title p {
+    color: azure;
+}
+
+/* BUTTON
+============================*/
+
+.btn {display: inline-block;
+        padding: 10px 30px ;
+        text-decoration: none;
+        border-radius: 10px;
+        transition: background-color 1s, color 1s, border 1s;
+        margin-bottom: 20px;
+}
+
+.btn_full {background-color: cadetblue;
+            color: darkcyan;
+            margin-right: 15px;
+}
+
+.btn_ghost {border: 1px solid #fff;
+            color: #fff;
+            }
+
+.btn_full:hover {background-color: darkcyan;
+    color: #fff;
+}            
+
+.btn_ghost:hover {background-color: darkcyan;
+    color: #fff;
+    border: 1px solid darkcyan;
+}
+
+
+/* PRODUITS
+============================*/
+
+.produits_plus {margin: 20px 0;}
+
+.produits_plus:hover .produits_icon {
+    color: rgb(87, 212, 164);
+    transform: translateX(20px);
+}
+
+.produits_img {max-width: 100%;
+                height: auto;
+}
+
+.produits_icon {
+    font-size: 34px;
+    color: darkgreen;
+    transition: all 1s;
+}
+
+/* FAMILLE POMMES
+============================*/
+
+.famille_pommes {
+    background-color: darkkhaki;
+}
+
+.famille_details {
+    background-color: white;
+    padding: 40px 30px;
+    border-radius: 10px ;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    min-height: 665px;
+    margin-bottom: 20px;
+}
+
+.famille_details img {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    
+
+}
+
+.famille_details h4 {
+    text-align: center;
+}
+
+
+/* GALERIE PHOTOS
+============================*/
+
+.galeries_img {
+    display:block;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat ;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    height: 500px;
+    margin-bottom: 30px;
+
+}
+
+.galerie_titre {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+
+}
+
+.galerie_titre h4 {
+    color: white;
+
+}
+
+
+/* Avis Client
+============================*/
+
+.client {
+    background-image: linear-gradient(to bottom right, rgba(25, 8, 177, 0.4),
+
+    rgba(250,250,250,1)
+), 
+    url(../images/AvisClients/marek-studzinski-3D6yReT06p0-unsplash.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+.client h2 {
+    color: white;
+}
+blockquote {
+    padding: 5px;
+    font-style: italic;
+    line-height: 150%;
+    color: white;
+}
+
+blockquote::before {
+    content: "\201C";
+    font-size: 100px;
+    font-family: 'Marck Script', cursif ;
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    color: rgba(250,250,250,.5);
+}
+
+cite {
+font-size: 90%;
+display: block;
+margin-top: 20px;
+}
+
+cite img {
+    height: 50px;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+
+.client h2::after {
+    background-color: white;
+}
+
+.client_profil {
+
+
+}
+
+/* PRIX
+============================*/
+
+.tarif {
+ box-shadow: 0 0 5px rgba(0,0,0,0.3);
+ border-radius: 10px;
+ margin-bottom: 20px;
+}
+
+.tarif h3 {
+    color: darkgreen;
+    font-weight: 400;
+}
+.tarif h4 {
+    font-size: 200%;
+    font-weight: 100;
+}
+
+.tarif_title {
+    padding: 10px 10px 0 10px;
+    border-bottom: 1px solid rgb(180, 180, 180);
+}
+
+.tarif_plus {
+    background-color: rgb(177, 235, 191);
+}
+
+.tarif_title_plus {
+    font-size: 16px;
+    text-align: center;
+    font-weight: 400;
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    background-color: darkgreen;
+    color: white;
+    border-radius: 10px;
+    padding: 2px;
+}
+
+.tarif span {
+    font-weight: 100;
+    font-size: 40%;
+    position: relative;
+    /*top: 15px;*/
+    left: 2px;
+}
+
+.tarif_content ul {
+    list-style: none;
+    padding: 20px;
+    font-weight: 300;
+    line-height: 35px;
+}
+
+.tarif_content ul li i {
+    font-size: 90%;
+    margin-right: 10px;
+}
+
+.payed_signup {
+    text-align: center;
+}
+.payed_signup:hover .btn_tarif{
+    background-color: darkgreen;
+    color: darkgrey;
+}
+
+.btn_tarif {
+    background-color: grey;
+    color: white;
+    margin-bottom: 20px;
+}
+
+
+/* Contact
+============================*/
+
+.contact_form {
+    margin-bottom: 20px;
+
+}
+
+.contact_message {
+    width: 100%;
+}
+
+.btn_contact {
+    background-color: cadetblue;
+    color: darkcyan;
+}
+
+.map {
+    position: relative;
+    padding-bottom: 75%;
+    height: 0;
+    overflow: hidden;
+}  
+.map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* FOOTER
+============================*/
+footer {
+    background-color: darkgreen;
+    color: white;
+    height: 60px;
+    text-align: center;
+    padding: 20px 20px;
+}
+
+.copyright p {
+    text-align: center;
+}
+
+.copyright a {
+    color: white;
+}
