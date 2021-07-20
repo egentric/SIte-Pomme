@@ -2,4 +2,5 @@
 
 https://egentric.github.io/Site-Pomme/
 
-Exercice début de formation, utilisation de bootstrap
+18/06/2021
+Exercice début de formation, utilisation de bootstrap.
